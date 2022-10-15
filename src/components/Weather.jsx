@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import "./style.css";
-import "font-awesome/css/font-awesome.css";
 
 const Weather = () => {
     const [city, setCity] = useState(null);
@@ -30,14 +29,12 @@ const Weather = () => {
                 ) : (<>
                     <div className="info">
                         <h2 className="location">
-                            <i className="fa fa-street-view icon-street"></i>{search}
+                        {search}
                         </h2>
                         <h1 className="temp">{city.temp}°C</h1>
                         <h3 className="tempmin_max">Min: {city.temp_min}°C | Max: {city.temp_max}°C</h3>
                     </div>
-                    <div className="wave -one"></div>
-                    <div className="wave -two"></div>
-                    <div className="wave -three"></div>
+              
                 </>
                 )}
 
